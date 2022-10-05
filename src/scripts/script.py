@@ -1,4 +1,4 @@
-print("Holiwiii BBs")
+print("Holiwiii BB dime tu name")
 
 nombre = input()
 print(f"bona tarda, {nombre} , Catalonia independent")

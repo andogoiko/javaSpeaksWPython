@@ -14,8 +14,8 @@ public class Main {
 
             File projectPath = new File("src/scripts/script.py");
 
-            ProcessBuilder pb = new ProcessBuilder().command("python.exe", projectPath.getAbsolutePath() );  
-            
+            ProcessBuilder pb = new ProcessBuilder().command("python.exe", projectPath.getAbsolutePath() );
+
             Process elPruses = pb.start();
 
             InputStream inputStream = elPruses.getInputStream();
@@ -27,8 +27,6 @@ public class Main {
             line = bfr.readLine();
             System.out.println(line);
 
-
-            System.out.println("Decíme tu nombre");
             String nombre = scanner.nextLine();
 
             OutputStream outStream = elPruses.getOutputStream();
