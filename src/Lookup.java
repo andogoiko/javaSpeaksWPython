@@ -56,6 +56,9 @@ public class Lookup {
                 while ((line = bufferedReader.readLine()) != null) {
                     System.out.println(line);
                     resp = line;
+                    if (line == null){
+                        break;
+                    }
                 }
 
                 if(resp.equalsIgnoreCase("exit")){
